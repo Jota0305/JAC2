@@ -1,13 +1,10 @@
 import React from "react";
+import Header from "./pages/Header.jsx";
+
 function App() {
 
-
   return (
-  <div className="bg-red-500">
-
-    <h1>Hola mundo</h1>
-  </div>
-  
+    <Header/>
   )
 }
 
