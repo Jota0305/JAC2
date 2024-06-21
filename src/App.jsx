@@ -1,10 +1,17 @@
 import React from "react";
-import Header from "./pages/Header.jsx";
+import Home from "./pages/Home.jsx"
+import About from "./pages/About.jsx"
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
 
   return (
-    <Header/>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home/>} />
+        <Route path="/" element={<About/>} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 
