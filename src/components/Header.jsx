@@ -1,5 +1,10 @@
 import React from "react";
-import { RiMap2Line, RiMailLine, RiSearchLine, RiArrowDownSLine } from "react-icons/ri";
+import {
+  RiMap2Line,
+  RiMailLine,
+  RiSearchLine,
+  RiArrowDownSLine,
+} from "react-icons/ri";
 
 function Header() {
   return (
@@ -33,26 +38,64 @@ function Header() {
         <div className="ml-40 flex items-center">
           <ul className="flex items-center gap-10">
             <li>
-              <a className="hover:border-b-2 hover:border-red-500 transition ease-in-out duration-600 " href="#">INICIO</a>
+              <a
+                className="hover:border-b-2 hover:border-red-500 transition ease-in-out duration-600 "
+                href="#"
+              >
+                INICIO
+              </a>
             </li>
             <li>
-              <a className="hover:border-b-2 hover:border-red-500 transition ease-in-out duration-600 "  href="#">ACERCA DE</a>
+              <a
+                className="hover:border-b-2 hover:border-red-500 transition ease-in-out duration-600 "
+                href="#"
+              >
+                ACERCA DE
+              </a>
             </li>
             <li>
-              <a className="hover:border-b-2 hover:border-red-500 transition ease-in-out duration-600 "  href="#">SERVICIOS</a>
+              <a
+                className="hover:border-b-2 hover:border-red-500 transition ease-in-out duration-600 "
+                href="#"
+              >
+                SERVICIOS
+              </a>
+            </li>
+            <li className="relative group">
+              <a
+                className="flex items-center h-5 hover:border-b-2 hover:border-red-500 transition ease-in-out duration-600 "
+                href="#"
+              >
+                BLOG <RiArrowDownSLine className="ml-1" />
+              </a>
+              <ul className="mt-1 bg-white w-40 p-4  absolute hidden group-hover:block">
+                <li>
+                  <a className="hover:border-b-2 hover:border-red-500 transition ease-in-out duration-600 " href="">BLOG</a>
+                </li>
+                <li>
+                  <a className="hover:border-b-2 hover:border-red-500 transition ease-in-out duration-600 " href="">SIMPLE</a>
+                </li>
+                <li>
+                  <a className="hover:border-b-2 hover:border-red-500 transition ease-in-out duration-600 " href="">COMPLETO</a>
+                </li>
+              </ul>
             </li>
             <li>
-              <a className="flex items-center hover:border-b-2 hover:border-red-500 transition ease-in-out duration-600 " href="#">BLOG<RiArrowDownSLine /></a>
-            </li>
-            <li>
-              <a className="hover:border-b-2 hover:border-red-500 transition ease-in-out duration-600 " href="#">CONTACTANOS</a>
+              <a
+                className="hover:border-b-2 hover:border-red-500 transition ease-in-out duration-600 "
+                href="#"
+              >
+                CONTACTANOS
+              </a>
             </li>
           </ul>
         </div>
         <div className="flex ml-40">
           <div className="flex items-center">
             <button className="flex items-center justify-center  w-10 h-10 bg-red-500 rounded-full hover:bg-violet-900">
-              <a className="text-white font-bold text-2xl " href="#"><RiSearchLine/></a>
+              <a className="text-white font-bold text-2xl " href="#">
+                <RiSearchLine />
+              </a>
             </button>
           </div>
           <div className="ml-6">
