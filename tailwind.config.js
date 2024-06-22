@@ -1,3 +1,5 @@
+import { BorderWidth } from 'react-icons/bs';
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -5,7 +7,14 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily:{
+        'fuentPrincipal': ['EB Garamond', 'serif']
+      }
+    },
+    variants:{
+      borderWidth: ['responsive','hover','focus'],
+    }
   },
   plugins: [],
 }
