@@ -1,9 +1,13 @@
 import React from 'react'
 import Header from '../components/Header';
+import Slaider from '../components/Slider/Slider.jsx';
 
 function Home() {
   return (
-    <Header/>
+    <div>
+      <Header/>
+      <Slaider/>
+    </div>
   )
 }
 
