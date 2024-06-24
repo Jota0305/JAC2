@@ -1,40 +1,29 @@
-// import react from "@vitejs/plugin-react-swc";
-import React from "react";
-import { RiArrowLeftSLine, RiArrowRightSLine } from "react-icons/ri";
+import React from 'react';
+import Slider from 'react-slick';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
-function Slider({ imagenes }) {
-  const [imagenActual, setImagenActual] = React.useState(0);
-  const cantidad = imagenes?.length;
+const ImageSlider = () => {
 
-  if (!Array.isArray(imagenes) || cantidad == 0)
-    return;
+  const images = [
+    'src/assets/slaider1.jpg',
+    'src/assets/slaider2.jpg',
+    'src/assets/slaider3.jpg',
+    'src/assets/slaider4.jpg',
 
-  const siguienteImagen = () =>{ setImagenActual(imagenActual == cantidad - 1 ? 0 : imagenActual + 1);
-  };
+  ];
 
-  const anteriorImagen = () => {
-    setImagenActual(imagenActual == 0 ? cantidad - 1 : imagenActual -1);
-  };
+  return (
+    <div className="w-full overflow-hidden">
+      <Slider>
+        {images.map((image, index) => (
+          <div key={index}>
+            <img src={image} alt={`Slide ${index}`} className="w-full h-[590px] object-cover" />
+          </div>
+        ))}
+      </Slider>
+    </div>
+  );
+};
 
-    return (
-      <div className="flex flex-row justify-center">
-        <button onClick={anteriorImagen}>
-          <RiArrowLeftSLine />
-        </button>
-        {imagenes.map((imagen, index) => {
-          return (
-            <div>
-              {imagenActual == index && (
-                <img key={index} src={imagen} alt="imagen" />
-              )}
-            </div>
-          );
-        })}
-        <button onClick={siguienteImagen}>
-          <RiArrowRightSLine />
-        </button>
-      </div>
-    );
-}
-
-export default Slider;
+export default ImageSlider;

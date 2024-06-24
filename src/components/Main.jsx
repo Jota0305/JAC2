@@ -1,7 +1,7 @@
 function Main() {
   return (
-    <div className="bg-purple-100 w-full h-80">
-      <div className="px-44 py-11">
+    <div className="bg-purple-100 w-full h-[370px]">
+      <div className="px-44 py-20">
         <div className="flex items-center gap-10">
           <div className="text-justify p-5">
             <div className="relative text-purple-700 font-bold">
