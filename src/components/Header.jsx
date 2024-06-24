@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from 'react';
 import {
   RiMap2Line,
   RiMailLine,
@@ -7,6 +7,12 @@ import {
 } from "react-icons/ri";
 
 function Header() {
+  const [isSubMenuVisible, setIsSubMenuVisible] = useState(false);
+
+  const toggleSubMenu = () => {
+    setIsSubMenuVisible(!isSubMenuVisible);
+  };
+
   return (
     <div className="font-fuentPrincipal">
       <div className="bg-violet-900 flex justify-center text-white">
@@ -63,20 +69,39 @@ function Header() {
             </li>
             <li className="relative group">
               <a
-                className="flex items-center h-5 hover:border-b-2 hover:border-red-500 transition ease-in-out duration-600 "
-                href="#"
+                className="flex items-center h-5 hover:border-b-2 hover:border-red-500 transition ease-in-out duration-600 cursor-pointer"
+                onClick={toggleSubMenu}
               >
                 BLOG <RiArrowDownSLine className="ml-1" />
               </a>
-              <ul className="mt-1 bg-white w-40 p-4  absolute hidden group-hover:block">
-                <li>
-                  <a className="hover:border-b-2 hover:border-red-500 transition ease-in-out duration-600 " href="">BLOG</a>
+              <ul
+                className={`mt-1 bg-white w-28 p-2 border rounded-lg absolute left-2 -translate-x-1/2 ml-10 ${
+                  isSubMenuVisible ? "block" : "hidden"
+                }`}
+              >
+                <li className="mb-2">
+                  <a
+                    className="hover:border-b-2 hover:border-red-500 transition ease-in-out duration-600"
+                    href=""
+                  >
+                    BLOG
+                  </a>
+                </li>
+                <li className="mb-2">
+                  <a
+                    className="hover:border-b-2 hover:border-red-500 transition ease-in-out duration-600"
+                    href=""
+                  >
+                    SIMPLE
+                  </a>
                 </li>
                 <li>
-                  <a className="hover:border-b-2 hover:border-red-500 transition ease-in-out duration-600 " href="">SIMPLE</a>
-                </li>
-                <li>
-                  <a className="hover:border-b-2 hover:border-red-500 transition ease-in-out duration-600 " href="">COMPLETO</a>
+                  <a
+                    className="hover:border-b-2 hover:border-red-500 transition ease-in-out duration-600"
+                    href=""
+                  >
+                    COMPLETO
+                  </a>
                 </li>
               </ul>
             </li>
