@@ -3,7 +3,7 @@ import Header from '../components/Header';
 import Slaider from '../components/Slider/Slider.jsx';
 
 function Home() {
-const mockImagenes = [
+const listaImagenes = [
 "src/assets/slaider1.jpg",
 "src/assets/slaider2.jpg",
 "src/assets/slaider3.jpg",
@@ -13,7 +13,7 @@ const mockImagenes = [
   return (
   <div>
       <Header/>
-      <Slaider imagenes={mockImagenes} />
+      <Slaider imagenes={listaImagenes} />
   </div>
   
   )
