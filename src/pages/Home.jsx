@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "../components/Header";
 import ImageSlider from "../components/Slider/Slider.jsx";
-import Main from "../components/Main.jsx";
+import Cards from "../components/Cards.jsx"
 
 function Home() {
 
@@ -9,7 +9,7 @@ function Home() {
     <div>
       <Header />
       <ImageSlider/>
-      <Main />
+      <Cards/>
     </div>
   );
 

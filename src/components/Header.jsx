@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from "react";
 import {
   RiMap2Line,
   RiMailLine,
@@ -8,10 +8,24 @@ import {
 
 function Header() {
   const [isSubMenuVisible, setIsSubMenuVisible] = useState(false);
+  const subMenuRef = useRef(null);
 
   const toggleSubMenu = () => {
     setIsSubMenuVisible(!isSubMenuVisible);
   };
+
+  const handleClickOutside = (event) => {
+    if (subMenuRef.current && !subMenuRef.current.contains(event.target)) {
+      setIsSubMenuVisible(false);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
 
   return (
     <div className="font-fuentPrincipal">
@@ -67,7 +81,7 @@ function Header() {
                 SERVICIOS
               </a>
             </li>
-            <li className="relative group">
+            <li className="relative group" ref={subMenuRef}>
               <a
                 className="flex items-center h-5 hover:border-b-2 hover:border-red-500 transition ease-in-out duration-600 cursor-pointer"
                 onClick={toggleSubMenu}
@@ -75,7 +89,7 @@ function Header() {
                 BLOG <RiArrowDownSLine className="ml-1" />
               </a>
               <ul
-                className={`mt-1 bg-white w-28 z-20 p-2 border rounded-lg absolute left-2 -translate-x-1/2 ml-10 ${
+                className={`mt-1 bg-white z-20 w-28 p-2 border rounded-lg absolute left-2 -translate-x-1/2 ml-10 ${
                   isSubMenuVisible ? "block" : "hidden"
                 }`}
               >
