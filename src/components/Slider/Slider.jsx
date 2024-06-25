@@ -1,6 +1,6 @@
-import React, { useRef } from 'react';
-import Slider from 'react-slick';
-import { RiArrowRightSLine, RiArrowLeftSLine  } from "react-icons/ri";
+import React, { useRef } from "react";
+import Slider from "react-slick";
+import { RiArrowRightSLine, RiArrowLeftSLine } from "react-icons/ri";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -8,10 +8,10 @@ const ImageSlider = () => {
   const sliderRef = useRef(null); // Referencia al slider para controlar la navegación
 
   const images = [
-    'src/assets/slaider1.jpg',
-    'src/assets/slaider2.jpg',
-    'src/assets/slaider3.jpg',
-    'src/assets/slaider4.jpg',
+    "src/assets/slaider1.jpg",
+    "src/assets/slaider2.jpg",
+    "src/assets/slaider3.jpg",
+    "src/assets/slaider4.jpg",
   ];
 
   const settings = {
@@ -36,19 +36,23 @@ const ImageSlider = () => {
         {images.map((image, index) => (
           <div key={index}>
             <div className="relative bg-black">
-              <img src={image} alt={`Slide ${index}`} className="opacity-50 w-full h-[590px] object-cover" />
+              <img
+                src={image}
+                alt={`Slide ${index}`}
+                className="opacity-50 w-full h-[590px] object-cover"
+              />
 
               <button
                 className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-gray-800 text-white px-4 py-4 rounded-md hover:opacity-50"
-                onClick={adelante}
+                onClick={atras}
               >
                 <RiArrowLeftSLine />
               </button>
               <button
                 className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-gray-800 text-white px-4 py-4 rounded-md hover:opacity-50"
-                onClick={atras}
+                onClick={adelante}
               >
-               <RiArrowRightSLine />
+                <RiArrowRightSLine />
               </button>
             </div>
           </div>
