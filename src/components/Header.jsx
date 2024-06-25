@@ -1,10 +1,15 @@
 import React, { useState } from 'react';
+import ServiceDescription from '../pages/Service';
+
+
 import {
   RiMap2Line,
   RiMailLine,
   RiSearchLine,
   RiArrowDownSLine,
 } from "react-icons/ri";
+import { Link } from 'react-router-dom';
+//import Service from './ServiceClinical/OurService';
 
 function Header() {
   const [isSubMenuVisible, setIsSubMenuVisible] = useState(false);
@@ -62,7 +67,7 @@ function Header() {
             <li>
               <a
                 className="hover:border-b-2 hover:border-red-500 transition ease-in-out duration-600 "
-                href="#"
+                href="/service"
               >
                 SERVICIOS
               </a>
