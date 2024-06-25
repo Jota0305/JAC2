@@ -1,13 +1,17 @@
 import React from 'react';
 import { containers } from './Tarjet';
 
+
 const ImgContainer = ({ imageUrl, title, description }) => {
   return (
-    <div className='p-4 mt-4'>
-      <img src={imageUrl} alt={title} className='w-full h-auto'/>
-      <h3 className='text-lg font-semibold mt-2'>{title}</h3>
-      <p className='text-sm' >{description}</p>
-      <button className='bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded mt-2'>Cotizar</button>
+    <div className='p-4 mt-4  border-2 border-transparent rounded-lg transition-all duration-300 ease-in-out hover:border-blue-900'>
+      <img src={imageUrl} alt={title} className='w-full h-auto rounded-2xl
+       scale-90 hover:scale-100 duration-700'/>
+      <h3 className='text-lg font-semibold mt-2 text-center' >{title}</h3>
+      <p className='text-sm text-center' >{description}</p>
+      <button className='bg-blue-900 hover:bg-red-700 
+      text-white font-bold py-2 px-8 rounded mt-2 ml-48 
+      '>Cotizar</button>
     </div>
   );
 };

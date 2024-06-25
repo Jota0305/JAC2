@@ -77,7 +77,7 @@ const ImageSlider = () => {
                   </div>
                 ))}
                 <a
-                  href="#"
+                  href="/service"
                   className="bg-rose-500 font-bold transition ease-in-out duration-600 hover:bg-violet-900 text-white py-3 px-5 rounded-lg mt-11"
                 >
                   Ver Nuestro Servicios
