@@ -75,7 +75,7 @@ function Header() {
                 BLOG <RiArrowDownSLine className="ml-1" />
               </a>
               <ul
-                className={`mt-1 bg-white w-28 p-2 border rounded-lg absolute left-2 -translate-x-1/2 ml-10 ${
+                className={`mt-1 bg-white w-28 z-20 p-2 border rounded-lg absolute left-2 -translate-x-1/2 ml-10 ${
                   isSubMenuVisible ? "block" : "hidden"
                 }`}
               >
