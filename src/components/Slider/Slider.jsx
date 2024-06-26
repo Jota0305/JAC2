@@ -96,7 +96,6 @@ const ImageSlider = () => {
                 <RiArrowRightSLine />
               </button>
             </div>
-            <Main/>
           </div>
         ))}
       </Slider>
