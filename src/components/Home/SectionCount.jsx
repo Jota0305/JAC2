@@ -31,9 +31,8 @@ function SectionCount() {
       const windowHeight = window.innerHeight;
 
       if (sectionTop < windowHeight) {
-        // Start counting when section is in viewport
-        countToValue(165, setAppointmentsCount); // Replace 165 with your final appointment count
-        countToValue(563, setClientsCount); // Replace 563 with your final clients count
+        countToValue(563, setClientsCount);
+        countToValue(165, setAppointmentsCount);
       }
     };
 
@@ -46,7 +45,7 @@ function SectionCount() {
       <div className="flex px-80 py-16">
         <div className="mr-10">
           <img
-            className="w-[900px] h-[550px] rounded-2xl"
+            className="w-[1050px] h-[550px] rounded-2xl"
             src="src/assets/section-count/ab1.jpg"
             alt="imagen"
           />
