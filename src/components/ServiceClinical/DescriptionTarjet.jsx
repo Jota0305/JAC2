@@ -11,7 +11,7 @@ const ImgContainer = ({ imageUrl, title, description }) => {
       <p className='text-sm text-center' >{description}</p>
       <button className='bg-blue-900 hover:bg-red-700 
       text-white font-bold py-2 px-8 rounded mt-2 ml-48 
-      '>Cotizar</button>
+      transition duration-1000 ease-in-out'>Cotizar</button>
     </div>
   );
 };
