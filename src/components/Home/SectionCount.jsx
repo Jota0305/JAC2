@@ -1,47 +1,55 @@
-import React from "react";
-import { useState, useEffect } from "react";
+
+import { useState, useEffect ,useRef, useCallback} from "react";
+import { countToValue } from "../../helpers";
 
 function SectionCount() {
   const [appointmentsCount, setAppointmentsCount] = useState(0);
   const [clientsCount, setClientsCount] = useState(0);
+  const sectionRef = useRef(null);
+  const maxTime = 2000;
 
-  const countToValue = (
-    targetValue,
-    setterFunction,
-    increment = 1,
-    interval = 1
-  ) => {
-    let currentValue = 0;
-    const timer = setInterval(() => {
-      currentValue += increment;
-      if (currentValue >= targetValue) {
-        clearInterval(timer);
-        currentValue = targetValue;
-      }
-      setterFunction(currentValue);
-    }, interval);
-  };
+  const startCounting = useCallback(() => {
+    const cleanupAppointmentsCount = countToValue(165, setAppointmentsCount, maxTime);
+    const cleanupClientsCount = countToValue(563, setClientsCount, maxTime);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const section = document.querySelector(".bg-purple-100");
-      if (!section) return;
-
-      const sectionTop = section.getBoundingClientRect().top;
-      const windowHeight = window.innerHeight;
-
-      if (sectionTop < windowHeight) {
-        countToValue(563, setClientsCount);
-        countToValue(165, setAppointmentsCount);
-      }
+    return () => {
+      cleanupAppointmentsCount();
+      cleanupClientsCount();
     };
+  }, [maxTime]);
 
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+  const resetCounts = useCallback(() => {
+    setAppointmentsCount(0);
+    setClientsCount(0);
   }, []);
 
+  useEffect(() => {
+    const section = sectionRef.current;
+    if (!section) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const cleanup = startCounting();
+            return () => cleanup();
+          } else {
+            resetCounts();
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    observer.observe(section);
+
+    return () => {
+      if (section) observer.unobserve(section);
+    };
+  }, [startCounting, resetCounts]);
+
   return (
-    <div className="w-full h-[370px]">
+    <div ref={sectionRef} className="w-full h-[370px]">
       <div className="flex px-80 py-16">
         <div className="mr-10">
           <img
