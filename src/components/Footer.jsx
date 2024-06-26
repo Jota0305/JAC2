@@ -8,9 +8,9 @@ function Footer() {
   return (
     <div className="bg-customColor w-full h-[600px] flex mt-96">
       <div className="w-[600px] h-[550px] border-r-[1px] border-b-[1px] text-justify py-40 px-52 border-white border-opacity-5">
-        <h1 className="text-rose-500 font-bold mb-5 text-[30px]">
+        <a href="/" className="text-rose-500 font-bold mb-5 text-[30px]">
           Dent<span className="text-white">ile</span>
-        </h1>
+        </a>
         <p className="text-gray-600 w-72">
           Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
           nisi ut aliquip ex ea commodo consequat.
@@ -137,7 +137,7 @@ function Footer() {
               <p>Friday</p>
               <p>09:00 - 17:00</p>
               <p>Sat day-Sunday</p>
-              <p>Closed</p>
+              <p className="ml-11">Closed</p>
             </div>
           </div>
         </div>
