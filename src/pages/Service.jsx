@@ -4,6 +4,8 @@ import ImgContainers from "../components/ServiceClinical/DescriptionTarjet";
 import Header from "../components/Header";
 import SomeMoreFeatures from "../components/ServiceClinical/MoreFeatures";
 import FeaturesMoreDescription from "../components/ServiceClinical/DescriptionFeatures";
+import SectionCount from "../components/Home/SectionCount";
+import Footer from "../components/Footer";
 
 function ServiceDescription() {
   return (
@@ -16,6 +18,8 @@ function ServiceDescription() {
         <div className="absolute top-0 left-0">
           <SomeMoreFeatures />
           <FeaturesMoreDescription />
+          <SectionCount />
+          <Footer />
         </div>
       </div>
     </div>
