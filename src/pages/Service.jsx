@@ -5,18 +5,20 @@ import Header from "../components/Header";
 import SomeMoreFeatures from "../components/ServiceClinical/MoreFeatures";
 import FeaturesMoreDescription from "../components/ServiceClinical/DescriptionFeatures";
 
-function ServiceDescription(){
-    return(
-        <div>
-            <Header/>
-            <Service/>
-            <ImgContainers/>
-            <div className="bg-indigo-900">
-            <SomeMoreFeatures/>
-            <FeaturesMoreDescription/>
-            </div>
+function ServiceDescription() {
+  return (
+    <div className="">
+      <Header />
+      <Service />
+      <ImgContainers />
+      <div className="bg-[#433254] h-[590px] relative">
+        <div className="opacity-[0.12] w-full h-full object-cover bg-[url('src/assets/slaider5.jpg')] bg-fixed"></div>
+        <div className="absolute top-0 left-0">
+          <SomeMoreFeatures />
+          <FeaturesMoreDescription />
         </div>
-    )
-};
+      </div>
+    </div>
+  );
+}
 export default ServiceDescription;
-
