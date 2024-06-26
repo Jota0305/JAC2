@@ -35,23 +35,23 @@ export const containers = [
 
 export const MoreOfService = [
   {
-    icono:<FaPenToSquare/>,
+    icono:<FaPenToSquare className="h-8 w-8" />,
     title:'Free Check Up',
     description:'Nuestro equipo de expertos está comprometido en brindarte la mejor atención con tecnología de vanguardia'
   },
   {
-    icono: <FaUmbrella/>,
+    icono: <FaUmbrella className="h-8 w-8" />,
     title:'Always Open',
     description:'Nuestro equipo de expertos está comprometido en brindarte la mejor atención con tecnología de vanguardia'
   },
   {
-    icono: <FaGears/>,
+    icono: <FaGears className="h-8 w-8"/>,
     title:'Serve With Smile',
     description: 'Nuestro equipo de expertos está comprometido en brindarte la mejor atención con tecnología de vanguardia'
   },
   {
-    icono: <FaSpinner/>,
-    title:'Work With Hearts',
+    icono: <FaSpinner className="h-8 w-8"/>,
+    title:'Work  Hearts',
     description: 'Nuestro equipo de expertos está comprometido en brindarte la mejor atención con tecnología de vanguardia'
   }
 
