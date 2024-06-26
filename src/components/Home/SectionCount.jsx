@@ -43,10 +43,10 @@ function SectionCount() {
 
   return (
     <div className="w-full h-[370px]">
-      <div className="flex px-44 py-16">
+      <div className="flex px-80 py-16">
         <div className="mr-10">
           <img
-            className="w-[800px] h-[550px] rounded-2xl"
+            className="w-[900px] h-[550px] rounded-2xl"
             src="src/assets/section-count/ab1.jpg"
             alt="imagen"
           />
