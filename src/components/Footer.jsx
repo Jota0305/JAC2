@@ -6,7 +6,7 @@ import { FaGooglePlusG } from "react-icons/fa6";
 
 function Footer() {
   return (
-    <div className="bg-customColor w-full h-[600px] flex">
+    <div className="bg-customColor w-full h-[600px] flex mt-96">
       <div className="w-[600px] h-[550px] border-r-[1px] border-b-[1px] text-justify py-40 px-52 border-white border-opacity-5">
         <h1 className="text-rose-500 font-bold mb-5 text-[30px]">
           Dent<span className="text-white">ile</span>
