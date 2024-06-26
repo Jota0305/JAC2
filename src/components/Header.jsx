@@ -1,6 +1,5 @@
 import Service from "./ServiceClinical/OurService";
 
-
 import React, { useState, useRef, useEffect } from "react";
 
 import {
@@ -9,8 +8,7 @@ import {
   RiSearchLine,
   RiArrowDownSLine,
 } from "react-icons/ri";
-import { Link } from 'react-router-dom';
-
+import { Link } from "react-router-dom";
 
 function Header() {
   const [isSubMenuVisible, setIsSubMenuVisible] = useState(false);
@@ -65,15 +63,15 @@ function Header() {
           <ul className="flex items-center gap-10">
             <li>
               <a
-                className="hover:border-b-2 hover:border-red-500 transition ease-in-out duration-600 "
-                href="#"
+                className="border-animate hover:border-red-500 transition ease-in-out duration-600 pb-2 mt-3 "
+                href="/"
               >
                 INICIO
               </a>
             </li>
             <li>
               <a
-                className="hover:border-b-2 hover:border-red-500 transition ease-in-out duration-600 "
+                className="border-animate hover:border-red-500 transition ease-in-out duration-600 pb-2 mt-3 "
                 href="#"
               >
                 ACERCA DE
@@ -81,7 +79,7 @@ function Header() {
             </li>
             <li>
               <a
-                className="hover:border-b-2 hover:border-red-500 transition ease-in-out duration-600 "
+                className="border-animate hover:border-red-500 transition ease-in-out duration-600 pb-2 mt-3 "
                 href="/service"
               >
                 SERVICIOS
@@ -89,7 +87,7 @@ function Header() {
             </li>
             <li className="relative group" ref={subMenuRef}>
               <a
-                className="flex items-center h-5 hover:border-b-2 hover:border-red-500 transition ease-in-out duration-600 cursor-pointer"
+                className="flex items-center h-5 border-animate hover:border-red-500 transition ease-in-out duration-600 pb-4 mt-[21px] cursor-pointer"
                 onClick={toggleSubMenu}
               >
                 BLOG <RiArrowDownSLine className="ml-1" />
@@ -101,7 +99,7 @@ function Header() {
               >
                 <li className="mb-2">
                   <a
-                    className="hover:border-b-2 hover:border-red-500 transition ease-in-out duration-600"
+                    className="border-animate hover:border-red-500 transition ease-in-out duration-600"
                     href=""
                   >
                     BLOG
@@ -109,7 +107,7 @@ function Header() {
                 </li>
                 <li className="mb-2">
                   <a
-                    className="hover:border-b-2 hover:border-red-500 transition ease-in-out duration-600"
+                    className="border-animate hover:border-red-500 transition ease-in-out duration-600"
                     href=""
                   >
                     SIMPLE
@@ -117,7 +115,7 @@ function Header() {
                 </li>
                 <li>
                   <a
-                    className="hover:border-b-2 hover:border-red-500 transition ease-in-out duration-600"
+                    className="border-animate hover:border-red-500 transition ease-in-out duration-600"
                     href=""
                   >
                     COMPLETO
@@ -127,7 +125,7 @@ function Header() {
             </li>
             <li>
               <a
-                className="hover:border-b-2 hover:border-red-500 transition ease-in-out duration-600 "
+                className="border-animate hover:border-red-500 transition ease-in-out duration-600 pb-2 mt-3 "
                 href="#"
               >
                 CONTACTANOS

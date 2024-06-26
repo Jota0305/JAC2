@@ -3,3 +3,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .border-animate {
+    position: relative;
+    display: inline-block;
+    /* padding-bottom: 8px; */
+  }
+
+  .border-animate::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 2px; /* Cambia el grosor del borde aquí */
+    background-color: red; /* Cambia el color del borde aquí */
+    transition: all 0.6s ease-in-out;
+  }
+
+  .border-animate:hover::after {
+    left: 0;
+    width: 100%;
+  }
+}
