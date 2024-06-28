@@ -49,7 +49,7 @@ function SectionCount() {
   }, [startCounting, resetCounts]);
 
   return (
-    <div ref={sectionRef} className="w-full h-[370px]">
+    <div ref={sectionRef} className="w-full h-[370px] mb-96">
       <div className="flex px-80 py-16">
         <div className="mr-10">
           <img
