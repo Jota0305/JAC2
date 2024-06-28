@@ -55,7 +55,7 @@ function Header() {
       </div>
       <div className="flex justify-center p-6">
         <div className="flex items-center">
-          <a className="font-bold text-4xl text-rose-500" href="/home">
+          <a className="font-bold text-4xl text-rose-500" href="/">
             Dent<span className="text-black">ile</span>
           </a>
         </div>
