@@ -72,7 +72,7 @@ function Header() {
             <li>
               <a
                 className="border-animate hover:border-red-500 transition ease-in-out duration-600 pb-2 mt-3 "
-                href="#"
+                href="/About"
               >
                 ACERCA DE
               </a>
