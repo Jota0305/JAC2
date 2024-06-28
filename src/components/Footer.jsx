@@ -6,7 +6,7 @@ import { FaGooglePlusG } from "react-icons/fa6";
 
 function Footer() {
   return (
-    <div className="bg-customColor w-full h-[600px] flex mt-96">
+    <div className="bg-customColor w-full h-[600px] flex mt-20 pl-28">
       <div className="w-[600px] h-[550px] border-r-[1px] border-b-[1px] text-justify py-40 px-52 border-white border-opacity-5">
         <a href="/" className="text-rose-500 font-bold mb-5 text-[30px]">
           Dent<span className="text-white">ile</span>
@@ -52,7 +52,7 @@ function Footer() {
           </div>
         </div>
         <hr className="mt-2 text-white opacity-5 w-[740px]" />
-        <div className="text-white mt-3 px-10 grid grid-cols-3 w-full pr-[500px] h-[320px] border-b-[1px] border-white border-opacity-5">
+        <div className="text-white mt-3 px-10 grid grid-cols-3 w-full pr-[400px] h-[320px] border-b-[1px] border-white border-opacity-5">
           <div>
             <h1 className="tex-white font-bold text-[20px] mb-4">
               Information
