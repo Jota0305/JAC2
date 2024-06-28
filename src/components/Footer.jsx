@@ -52,7 +52,7 @@ function Footer() {
           </div>
         </div>
         <hr className="mt-2 text-white opacity-5 w-[740px]" />
-        <div className="text-white mt-3 px-10 grid grid-cols-3 w-full pr-[200px] h-[320px] border-b-[1px] border-white border-opacity-5">
+        <div className="text-white mt-3 px-10 grid grid-cols-3 w-full pr-[500px] h-[320px] border-b-[1px] border-white border-opacity-5">
           <div>
             <h1 className="tex-white font-bold text-[20px] mb-4">
               Information
