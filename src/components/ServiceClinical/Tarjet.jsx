@@ -70,18 +70,17 @@ export const MoreOfService = [
 
 export const InformationContact = [
   {
-    icono: <FaLocationArrow />,
+    icono: <FaLocationArrow className="h-8 w-8" />,
     title: "Direccion",
-    description:
-      "4885 Pretty View Lane, Lorem ipsum, Dolor sit amet, New York, USA",
+    description: "Leonardo da vinci #792 Urb El Bosque",
   },
   {
-    icono: <FaPhone />,
+    icono: <FaPhone className="h-8 w-8" />,
     title: "Telefono",
     description: "+44 7834 857829  +44 987 654 321",
   },
   {
-    icono: <FaEnvelopeOpen />,
+    icono: <FaEnvelopeOpen className="h-8 w-8" />,
     title: "Correo",
     description: "mail@example.com mail@example.com",
   },
