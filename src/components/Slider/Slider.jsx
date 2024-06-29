@@ -12,33 +12,33 @@ const ImageSlider = () => {
     {
       src: "src/assets/slaider1.jpg",
       texts: [
-        { text: "Dental Care For Life", className: "text-lg font-bold" },
-        { text: "Experience, Trust And", className: "text-6xl font-bold" },
-        { text: "Proven Success", className: "text-6xl font-bold" },
+        { text: "Cuidado dental de por vida", className: "text-lg font-bold" },
+        { text: "Experiencia, confianza y", className: "text-6xl font-bold" },
+        { text: "Éxito comprobado", className: "text-6xl font-bold" },
       ],
     },
     {
       src: "src/assets/slaider3.jpg",
       texts: [
-        { text: "Care For Your Smile", className: "text-lg font-bold" },
-        { text: "Get All The Essential", className: "text-6xl font-bold" },
-        { text: "Dental Care Today", className: "text-6xl font-bold" },
+        { text: "Cuida tu sonrisa", className: "text-lg font-bold" },
+        { text: "Obtenga todo lo esencial", className: "text-6xl font-bold" },
+        { text: "Cuidado dental hoy", className: "text-6xl font-bold" },
       ],
     },
     {
       src: "src/assets/slaider2.jpg",
       texts: [
-        { text: "Dental Care For Life", className: "text-lg font-bold" },
-        { text: "Experience, Trust And", className: "text-6xl font-bold" },
-        { text: "Proven Success", className: "text-6xl font-bold" },
+        { text: "Cuidado dental de por vida", className: "text-lg font-bold" },
+        { text: "Experiencia, confianza y", className: "text-6xl font-bold" },
+        { text: "Éxito comprobado", className: "text-6xl font-bold" },
       ],
     },
     {
       src: "src/assets/slaider4.jpg",
       texts: [
-        { text: "Care For Your Smile", className: "text-lg font-bold" },
-        { text: "Get All The Essential", className: "text-6xl font-bold" },
-        { text: "Dental Care Today", className: "text-6xl font-bold" },
+        { text: "Cuida tu sonrisa", className: "text-lg font-bold" },
+        { text: "Obtenga todo lo esencial", className: "text-6xl font-bold" },
+        { text: "Cuidado dental hoy", className: "text-6xl font-bold" },
       ],
     },
   ];

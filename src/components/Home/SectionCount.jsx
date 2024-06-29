@@ -1,5 +1,4 @@
-
-import { useState, useEffect ,useRef, useCallback} from "react";
+import { useState, useEffect, useRef, useCallback } from "react";
 import { countToValue } from "../../helpers";
 
 function SectionCount() {
@@ -9,7 +8,11 @@ function SectionCount() {
   const maxTime = 2000;
 
   const startCounting = useCallback(() => {
-    const cleanupAppointmentsCount = countToValue(165, setAppointmentsCount, maxTime);
+    const cleanupAppointmentsCount = countToValue(
+      165,
+      setAppointmentsCount,
+      maxTime
+    );
     const cleanupClientsCount = countToValue(563, setClientsCount, maxTime);
 
     return () => {
@@ -62,11 +65,13 @@ function SectionCount() {
           <div>
             <div className="relative">
               <span className="absolute left-0 bottom-[10px] w-10 border-b-[1px] border-pink-500"></span>
-              <h6 className="ml-12 font-bold text-base">For a New smile</h6>
+              <h6 className="ml-12 font-bold text-base">
+                Por una nueva sonrisa
+              </h6>
             </div>
             <div className="">
               <h3 className="text-5xl font-bold mb-4 mt-4">
-                Caring Technologies For Your Dental Health
+                Tecnologías que cuidan su salud dental
               </h3>
               <p className="mb-10">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
@@ -79,12 +84,12 @@ function SectionCount() {
           <div className="flex gap-4">
             <div>
               <p className="text-6xl text-green-700">{appointmentsCount}</p>
-              <h4 className="text-2xl font-bold">Daily appointments</h4>
+              <h4 className="text-2xl font-bold">Citas Diarias</h4>
               <p>lorem ipsum dolor sit ament consectetur adipisicing elit</p>
             </div>
             <div>
               <p className="text-6xl text-green-700">{clientsCount}</p>
-              <h4 className="text-2xl font-bold">Happy Clients</h4>
+              <h4 className="text-2xl font-bold">Clientes Felices</h4>
               <p>lorem ipsum dolor sit ament consectetur adipisicing elit</p>
             </div>
           </div>
