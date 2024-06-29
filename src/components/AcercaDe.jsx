@@ -19,7 +19,7 @@ function AcerdaDe() {
           />
           <div className="text-center">
             <h1 className="text-black text-[40px] font-[800] mt-3 mb-1">
-              Welcome To Our Detile
+              Bienvenido a Nuestro Dentile
             </h1>
             <p className="text-gray-600 text-[18px]">
               Lorem ipsum dolor sit amet,Ea consequuntur .Ea consequuntur illum
@@ -29,8 +29,8 @@ function AcerdaDe() {
               consectetur adipisicing elit.
             </p>
             <div>
-              <button className="bg-violet-900 hover:bg-rose-500 transition ease-in-out duration-300 text-white px-10 py-3 mt-8 font-bold rounded-lg text-[18px]">
-                Read More
+              <button className="bg-violet-900 border-none hover:bg-rose-500 transition ease-in-out duration-300 text-white px-10 py-3 mt-8 font-bold rounded-lg text-[18px]">
+                Leer más
               </button>
             </div>
           </div>
@@ -48,7 +48,7 @@ function AcerdaDe() {
                   href="#"
                   className="text-[28px] font-[700] hover:text-rose-500"
                 >
-                  Annual Check-ups
+                  Chequeos Anuales
                 </a>
                 <p className="text-gray-700">
                   Lorem ipsum dolor sit amet,Ea consequuntur illum facere
@@ -65,7 +65,7 @@ function AcerdaDe() {
                   href="#"
                   className="text-[28px] font-[700] hover:text-rose-500"
                 >
-                  Work with Hearts
+                  Trabajar con corazones
                 </a>
                 <p className="text-gray-700">
                   Lorem ipsum dolor sit amet,Ea consequuntur illum facere
@@ -82,7 +82,7 @@ function AcerdaDe() {
                   href="#"
                   className="text-[28px] font-[700] hover:text-rose-500"
                 >
-                  Help at Hand
+                  Ayuda a la mano
                 </a>
                 <p className="text-gray-700">
                   Lorem ipsum dolor sit amet,Ea consequuntur illum facere
@@ -95,15 +95,15 @@ function AcerdaDe() {
             <div className="relative">
               <span className="absolute left-0 bottom-[20px] w-10 border-b-[1px] border-pink-500"></span>
               <h4 className="ml-12 font-bold bottom-[10px] absolute w-full text-violet-900 text-[20px]">
-                who we are
+                Quienes Somos
               </h4>
             </div>
-            <h1 className="text-[36px] font-[800]">Why Choose Us</h1>
+            <h1 className="text-[36px] font-[800]">Por qué elegirnos</h1>
             <p className="text-gray-700 mb-7 w-[600px]">
-              Excepteur sint occaecat non proident, sunt in culpa quis.
-              Phasellus lacinia id erat eu ullamcorper. Nunc id ipsum fringilla,
-              gravida felis vitae. Phasellus lacinia id, sunt in culpa quis.
-              Phasellus lacinia
+              A menos que estén ciegos, no salen, tienen la culpa. Ese era el
+              barco del Lacinia eu ullamcorper. Eso es precisamente, el
+              desencadenante de la vida embarazada. Barco Lacinia que, ellos
+              tienen la culpa. lacinia
             </p>
             <img
               className="rounded-lg w-[600px]"
@@ -119,10 +119,10 @@ function AcerdaDe() {
             <div className="relative">
               <span className="absolute left-0 bottom-[10px] w-10 border-b-[1px] border-pink-500"></span>
               <h4 className="ml-12 font-[800] bottom-[0px] absolute w-full text-violet-900 text-[16px]">
-                Expert Doctors
+                Doctores expertos
               </h4>
             </div>
-            <h1 className="text-[36px] font-[800]">Our Team</h1>
+            <h1 className="text-[36px] font-[800]">Nuestro equipo</h1>
             <p className="w-[300px] text-justify text-gray-700">
               Lorem ipsum dolor sit amet consectetur adipisicing elit sunt in
               culpa qui officia sed deserunt mollit anim id est laborum mollit
@@ -141,7 +141,7 @@ function AcerdaDe() {
                 </div>
                 Theresa Cruz
               </a>
-              <p className="text-gray-600 text-[18px]">President & CEO</p>
+              <p className="text-gray-600 text-[18px]">Presidenta y CEO</p>
               <div className="flex justify-between mt-4">
                 <div className="flex gap-3">
                   <a
@@ -267,10 +267,10 @@ function AcerdaDe() {
           <div className="relative">
             <span className="absolute left-0 -bottom-[px] w-10 border-b-[1px] border-pink-500"></span>
             <h4 className="ml-12 font-[800] -bottom-[10px] absolute w-full text-violet-900 text-[16px]">
-              We care your smile
+              Cuidamos Tu Sonrisa
             </h4>
           </div>
-          <h1 className="text-[46px] font-[800]">Featured Services</h1>
+          <h1 className="text-[46px] font-[800]">Servicios Destacados</h1>
           <div className="flex gap-8 text-center mt-12">
             <a
               className="text-black text-[22px] font-[700] hover:text-rose-500 transition ease-in-out duration-300 transform hover:-translate-y-2"
@@ -281,7 +281,7 @@ function AcerdaDe() {
                 src="src/assets/card1.jpg"
                 alt="Foto"
               />
-              <h1 className="mt-4">Periodontal Therapy</h1>
+              <h1 className="mt-4">Terapia Periodontal</h1>
             </a>
             <a
               className="text-black text-[22px] font-[700] hover:text-rose-500 transition ease-in-out duration-300 transform hover:-translate-y-2"
@@ -292,7 +292,7 @@ function AcerdaDe() {
                 src="src/assets/card2.jpg"
                 alt="Foto"
               />
-              <h1 className="mt-4">Cosmetic Dentistry</h1>
+              <h1 className="mt-4">Odontología Cosmetica</h1>
             </a>
             <a
               className="text-black text-[22px] font-[700] hover:text-rose-500 transition ease-in-out duration-300 transform hover:-translate-y-2"
@@ -303,7 +303,7 @@ function AcerdaDe() {
                 src="src/assets/card3.jpg"
                 alt="Foto"
               />
-              <h1 className="mt-4">Dental Implants</h1>
+              <h1 className="mt-4">Implantes Dentales</h1>
             </a>
             <a
               className="text-black text-[22px] font-[700] hover:text-rose-500 transition ease-in-out duration-300 transform hover:-translate-y-2"
@@ -314,7 +314,7 @@ function AcerdaDe() {
                 src="src/assets/card4.jpg"
                 alt="Foto"
               />
-              <h1 className="mt-4">Pediatric Dentistry</h1>
+              <h1 className="mt-4">Odontología Pediatrica</h1>
             </a>
           </div>
         </div>

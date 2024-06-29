@@ -13,14 +13,14 @@ function Cards() {
             <LuSignal />
           </div>
         </div>
-        <h1 className="mb-3 font-bold">Dental Brige</h1>
+        <h1 className="mb-3 font-[800] text-[20px]">Dental Brige</h1>
 
         <p className="mb-4">
-          Maecenas sodales eu commodo ligula eget dolor dolor sit amet ligula
+          Miembros de Mecenas eu commodo ligula eget dolor dolor let amet ligula
         </p>
 
-        <a className="text-rose-600 font-bold" href="#">
-          Read More
+        <a className="text-rose-500 text-[18px] font-[800]" href="#">
+          Leer más
         </a>
       </div>
       <div className="mt-10 w-60 bg-violet-100 rounded-lg px-5 py-16 h-60 relative text-center hover:bg-black hover:text-white transition duration-300 ease-in-out transform">
@@ -29,14 +29,14 @@ function Cards() {
             <FaEarListen />
           </div>
         </div>
-        <h1 className="mb-3 font-bold">Dental Brige</h1>
+        <h1 className="mb-3 font-[800] text-[20px]">Dental Brige</h1>
 
         <p className="mb-4">
-          Maecenas sodales eu commodo ligula eget dolor dolor sit amet ligula
+          Miembros de Mecenas eu commodo ligula eget dolor dolor let amet ligula
         </p>
 
-        <a className="text-rose-600 font-bold" href="#">
-          Read More
+        <a className="text-rose-500 text-[18px] font-[800]" href="#">
+          Leer más
         </a>
       </div>
       <div className="mt-10 w-60 bg-violet-100 rounded-lg px-5 py-16 h-60 relative text-center hover:bg-black hover:text-white transition duration-300 ease-in-out transform">
@@ -45,14 +45,14 @@ function Cards() {
             <IoDiamondOutline />
           </div>
         </div>
-        <h1 className="mb-3 font-bold">Dental Brige</h1>
+        <h1 className="mb-3 font-[800] text-[20px]">Dental Brige</h1>
 
         <p className="mb-4">
-          Maecenas sodales eu commodo ligula eget dolor dolor sit amet ligula
+          Miembros de Mecenas eu commodo ligula eget dolor dolor let amet ligula
         </p>
 
-        <a className="text-rose-600 font-bold" href="#">
-          Read More
+        <a className="text-rose-500 text-[18px] font-[800]" href="#">
+          Leer más
         </a>
       </div>
       <div className="mt-10 w-60 bg-violet-100 rounded-lg px-5 py-16 h-60 relative text-center hover:bg-black hover:text-white transition duration-300 ease-in-out transform">
@@ -61,14 +61,14 @@ function Cards() {
             <FaWandMagicSparkles />
           </div>
         </div>
-        <h1 className="mb-3 font-bold">Dental Brige</h1>
+        <h1 className="mb-3 font-[800] text-[20px]">Dental Brige</h1>
 
         <p className="mb-4">
-          Maecenas sodales eu commodo ligula eget dolor dolor sit amet ligula
+          Miembros de Mecenas eu commodo ligula eget dolor dolor let amet ligula
         </p>
 
-        <a className="text-rose-600 font-bold" href="#">
-          Read More
+        <a className="text-rose-500 text-[18px] font-[800]" href="#">
+          Leer más
         </a>
       </div>
     </div>
